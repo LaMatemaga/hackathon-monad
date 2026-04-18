@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react'
 import * as d3 from 'd3'
 import { useBlockStore } from '../hooks/useBlockStore'
 import { CHAINS, CHAIN_ORDER } from '../lib/chains'
-import type { ChainId } from '../lib/types'
+
 
 const MIN_BLOCKS = 10
 const DOMAIN: [number, number] = [0, 20_000]

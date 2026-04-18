@@ -1,5 +1,5 @@
 import { defineChain } from 'viem'
-import type { ChainConfig } from './types'
+import type { ChainId, ChainConfig } from './types'
 
 export const monadMainnetChain = defineChain({
   id: 143,
@@ -13,7 +13,7 @@ export const monadMainnetChain = defineChain({
   },
 })
 
-export const CHAINS: Record<string, ChainConfig> = {
+export const CHAINS: Record<ChainId, ChainConfig> = {
   monad: {
     id: 'monad',
     chainIdNumber: 143,
