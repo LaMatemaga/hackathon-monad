@@ -125,22 +125,40 @@ export function NetworkStats() {
         padding: '12px 24px 10px',
         background: 'linear-gradient(to bottom, rgba(14,9,28,0.95) 70%, transparent)',
         zIndex: 10,
-        pointerEvents: 'none',
+        pointerEvents: 'none',  // children override with pointerEvents:'all' where needed
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
         gap: 16,
       }}>
         <div>
-          <div style={{
-            fontFamily: 'Roboto Mono, monospace',
-            fontSize: 11,
-            fontWeight: 700,
-            color: '#6E54FF',
-            letterSpacing: 3,
-            textTransform: 'uppercase',
-          }}>
-            Monad — Parallel Execution
+          <div style={{ display: 'flex', alignItems: 'baseline', gap: 10 }}>
+            <div style={{
+              fontFamily: 'Roboto Mono, monospace',
+              fontSize: 13,
+              fontWeight: 700,
+              color: '#6E54FF',
+              letterSpacing: 3,
+              textTransform: 'uppercase',
+            }}>
+              Monad's Monad
+            </div>
+            <a
+              href="https://lamatemaga.xyz"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                fontFamily: 'Roboto Mono, monospace',
+                fontSize: 9,
+                color: '#6E54FF88',
+                letterSpacing: 1,
+                textDecoration: 'none',
+                pointerEvents: 'all',
+                borderBottom: '1px solid #6E54FF44',
+              }}
+            >
+              by LaMatemaga
+            </a>
           </div>
           <div style={{ fontFamily: 'Roboto Mono, monospace', fontSize: 10, color: '#444', marginTop: 2 }}>
             Each sphere = 1 transaction · Monad runs them all at once · others wait in line
