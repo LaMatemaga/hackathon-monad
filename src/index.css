@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-monad-purple: #6E54FF;
+  --color-monad-cyan: #85E6FF;
+  --color-monad-magenta: #FF8EE4;
+  --color-monad-orange: #FFAE45;
+  --color-monad-bg: #0E091C;
+  --font-mono: 'Roboto Mono', monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #0E091C;
+}
+
+#root {
+  width: 100%;
+  min-height: 100%;
+  overflow-y: auto;
+  background: #0E091C;
+}
